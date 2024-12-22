@@ -46,6 +46,29 @@ body {
   background-color: #ff5050;
 }
 
+/* Botón de reproducir música */
+#reproducirMusica {
+  background-color: #28a745; /* Verde brillante */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor cuando pasas por encima */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  margin-top: 20px; /* Espacio entre botones */
+}
+
+#reproducirMusica:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Agrandar un poco el botón */
+}
+
+#reproducirMusica:focus {
+  outline: none; /* Eliminar el borde de enfoque */
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); /* Sombra azul cuando se enfoca */
+}
+
 /* Tarjeta */
 #tarjeta {
   background-image: url('images/tarjeta.jpg');
