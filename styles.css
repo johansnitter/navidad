@@ -103,6 +103,7 @@ body {
   background-color: #ff0000;
   border-radius: 50%;
   animation: crecerDisminuir 3s infinite ease-in-out;
+  opacity: 0.8; /* Para que las esferas sean visibles */
 }
 
 @keyframes crecerDisminuir {
@@ -113,6 +114,7 @@ body {
     transform: scale(1.5);
   }
 }
+
 
 
 
