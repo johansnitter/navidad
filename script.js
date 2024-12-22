@@ -5,11 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const abrirCartaBtn = document.getElementById('abrirCarta');
     const carta = document.getElementById('carta');
     const regresarBtn = document.getElementById('regresar');
-    
+    const gifNavidad = document.getElementById('gifNavidad');
+    const nuevoIcono = document.getElementById('nuevoIcono');
+    const nuevaImagen = document.getElementById('nuevaImagen');
+    const textoImagen = document.getElementById('textoImagen');
+
 
     abrirTarjetaBtn.addEventListener('click', () => {
         inicio.classList.add('oculta');
         tarjeta.classList.remove('oculta');
+        gifNavidad.classList.remove('oculta');
         crearEsferas();
     });
 
@@ -63,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         });
     }
+    nuevoIcono.addEventListener('click', () => {
+        if (nuevaImagen.style.display === 'block') {
+            nuevaImagen.style.display = 'none'; // Ocultar imagen
+            textoImagen.style.display = 'none'; // Ocultar texto
+        } else {
+            nuevaImagen.style.display = 'block'; // Mostrar imagen
+            textoImagen.style.display = 'block'; // Mostrar texto
+        }
+    });
 });
 
 
