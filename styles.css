@@ -166,7 +166,7 @@ body {
   width: 100px; /* Ajusta el tamaño del icono */
   position: absolute;
   top: 10px; /* Distancia desde la parte superior */
-  right: 130px; /* Distancia de 90px desde el borde derecho */
+  right: 150px; /* Distancia de 90px desde el borde derecho */
   cursor: pointer;
   transition: transform 0.3s ease; /* Transición para el efecto hover */
 }
