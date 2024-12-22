@@ -48,7 +48,7 @@ body {
 
 /* Tarjeta */
 #tarjeta {
-  background-image: url('images/fondo_t.jpeg');
+  background-image: url('images/tarjeta.jpg');
   position: relative;
   overflow: hidden;
 }
