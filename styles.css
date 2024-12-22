@@ -149,14 +149,17 @@ body {
 }
 
 #gifNavidad {
-  width: 200px; /* Ajusta el tamaño */
-  position: absolute; /* Fijado en la esquina inferior derecha */
-  bottom: 50px; /* Distancia desde el borde inferior */
-  right: 90px; /* Distancia desde el borde derecho */
-  display: block; /* Asegura que se vea correctamente */
-  margin-left: auto;
-  margin-right: auto;
-  transition: opacity 0.5s ease;
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+  display: block;
+  transition: opacity 0.5s ease, z-index 0.3s ease;
+  z-index: 10; /* Inicialmente por encima */
+}
+
+#tarjeta {
+  z-index: 20; /* Tarjeta estará sobre el GIF */
 }
 
 #nuevoIcono {
