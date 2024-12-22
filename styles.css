@@ -178,7 +178,7 @@ body {
   display: none; /* Inicialmente oculta */
   position: absolute;
   bottom: 170px; /* Ajusta la distancia desde el borde inferior */
-  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  right: 50px; /* Ajusta la distancia desde el borde derecho */
 }
 
 #textoImagen {
