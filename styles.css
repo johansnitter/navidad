@@ -1,0 +1,75 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Pantallas */
+.pantalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.pantalla.oculta {
+  display: none;
+}
+
+/* Pantalla inicial */
+#inicio {
+  background-image: url('images/fondo_n.jpg');
+}
+
+.contenido-inicial h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+}
+
+#abrirTarjeta {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#abrirTarjeta:hover {
+  background-color: #ff5050;
+}
+
+/* Tarjeta */
+#tarjeta {
+  background-image: url('images/fondo_t.jpeg');
+}
+
+.contenido-tarjeta h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#abrirCarta {
+  width: 100px;
+  cursor: pointer;
+}
+
+.carta {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+  
+  
+  
