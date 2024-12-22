@@ -148,6 +148,49 @@ body {
   }
 }
 
+#gifNavidad {
+  width: 200px; /* Ajusta el tamaño */
+  position: absolute; /* Fijado en la esquina inferior derecha */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 90px; /* Distancia desde el borde derecho */
+  display: block; /* Asegura que se vea correctamente */
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 0.5s ease;
+}
+
+#nuevoIcono {
+  width: 100px; /* Ajusta el tamaño del icono */
+  position: absolute;
+  top: 20px; /* Distancia desde la parte superior */
+  right: 90px; /* Distancia de 90px desde el borde derecho */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+#nuevoIcono:hover {
+  transform: scale(1.1); /* Aumentamos el tamaño cuando el ratón pase por encima */
+}
+
+/* Imagen oculta inicialmente */
+#nuevaImagen {
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  display: none; /* Inicialmente oculta */
+  position: absolute;
+  bottom: 200px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+#textoImagen {
+  display: none; /* Oculto inicialmente */
+  position: absolute;
+  bottom: 150px; /* Distancia desde el borde inferior */
+  right: 20px; /* Alineado con la imagen */
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Para hacer el texto legible sobre cualquier fondo */
+}
+
 
   
   
