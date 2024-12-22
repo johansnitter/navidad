@@ -77,6 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
             textoImagen.style.display = 'block'; // Mostrar texto
         }
     });
+
+    document.getElementById('abrirCarta').addEventListener('click', function () {
+  // Cambiar el z-index del GIF para que quede detrás
+  const gifNavidad = document.getElementById('gifNavidad');
+  gifNavidad.style.zIndex = '5'; // Menor que el z-index de la tarjeta
+});
+
 });
 
 
