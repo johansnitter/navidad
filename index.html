@@ -10,6 +10,7 @@
   <div id="inicio" class="pantalla">
     <div class="contenido-inicial">
       <h1>🎄 ¡Feliz Navidad! 🎅</h1>
+      <button id="reproducirMusica">Reproducir Música</button>
       <button id="abrirTarjeta">Ábrelo</button>
     </div>
   </div>
@@ -27,12 +28,33 @@
     </div>
   </div>
 
-  <audio  controls autoplay loop>
+  <audio id="audioNavidad" controls loop style="display:none;">
     <source src="images/navidad.mp3" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
-  </audio>
+</audio>
+
   
   <script src="script.js"></script>
+  <script>
+    const botonReproducir = document.getElementById('reproducirMusica');
+    const audioNavidad = document.getElementById('audioNavidad');
+    const abrirTarjetaBtn = document.getElementById('abrirTarjeta');
+    const inicio = document.getElementById('inicio');
+    const tarjeta = document.getElementById('tarjeta');
+
+    if (botonReproducir && audioNavidad) { // Comprobación para evitar errores
+        botonReproducir.addEventListener('click', () => {
+            audioNavidad.play();
+            botonReproducir.style.display = 'none';
+        });
+    }
+
+    abrirTarjetaBtn.addEventListener('click', () => {
+        inicio.classList.add('oculta');
+        tarjeta.classList.remove('oculta');
+    });
+</script>
+
 </body>
 </html>
 
