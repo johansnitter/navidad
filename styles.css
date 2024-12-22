@@ -162,8 +162,8 @@ body {
 #nuevoIcono {
   width: 100px; /* Ajusta el tamaño del icono */
   position: absolute;
-  top: 20px; /* Distancia desde la parte superior */
-  right: 90px; /* Distancia de 90px desde el borde derecho */
+  top: 10px; /* Distancia desde la parte superior */
+  right: 110px; /* Distancia de 90px desde el borde derecho */
   cursor: pointer;
   transition: transform 0.3s ease; /* Transición para el efecto hover */
 }
@@ -177,14 +177,14 @@ body {
   width: 300px; /* Ajusta el tamaño de la imagen */
   display: none; /* Inicialmente oculta */
   position: absolute;
-  bottom: 170px; /* Ajusta la distancia desde el borde inferior */
+  bottom: 220px; /* Ajusta la distancia desde el borde inferior */
   right: 50px; /* Ajusta la distancia desde el borde derecho */
 }
 
 #textoImagen {
   display: none; /* Oculto inicialmente */
   position: absolute;
-  bottom: 130px; /* Distancia desde el borde inferior */
+  bottom: 150px; /* Distancia desde el borde inferior */
   right: 20px; /* Alineado con la imagen */
   font-size: 18px;
   color: white;
