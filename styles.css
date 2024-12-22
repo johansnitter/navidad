@@ -100,7 +100,7 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #ff0000;
+  background-color: #FFFFFF;
   border-radius: 50%;
   animation: crecerDisminuir 3s infinite ease-in-out;
   opacity: 0.8; /* Para que las esferas sean visibles */
