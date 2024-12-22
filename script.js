@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       tarjeta.appendChild(esfera);
     }
+
+    // Iniciar animación de caída de esferas
+    animarEsferas();
   }
 
   // Función para eliminar las esferas
@@ -51,7 +54,42 @@ document.addEventListener('DOMContentLoaded', () => {
       esfera.remove();
     });
   }
+
+  // Función para animar las esferas (como nieve)
+  function animarEsferas() {
+    const esferas = document.querySelectorAll('.esfera');
+    
+    esferas.forEach(esfera => {
+      // Animación de caída
+      const animacionCaida = esfera.animate(
+        [
+          { transform: 'translateY(0)', opacity: 1 },
+          { transform: `translateY(100vh)`, opacity: 0 }
+        ],
+        {
+          duration: Math.random() * 4000 + 4000, // Duración aleatoria entre 4 y 8 segundos
+          iterations: Infinity, // Animación infinita
+          easing: 'linear' // Movimiento constante
+        }
+      );
+
+      // Animación de cambio de tamaño
+      const animacionEscala = esfera.animate(
+        [
+          { transform: 'scale(1)' },
+          { transform: 'scale(0.5)' },
+          { transform: 'scale(1)' }
+        ],
+        {
+          duration: Math.random() * 2000 + 2000, // Duración aleatoria entre 2 y 4 segundos
+          iterations: Infinity,
+          easing: 'ease-in-out'
+        }
+      );
+    });
+  }
 });
+
 
 
 
